@@ -1,0 +1,27 @@
+set -g prefix C-s
+bind-key -r C-s send-prefix
+
+bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
+
+set-option -g status-left-length 50
+set-option -g status-right " #(battery -t) #(date '+%a, %b %d - %I:%M') "
+
+bind-key - split-window -v '#{pane_current_path}'
+bind-key / split-window -h '#{pane_current_path}'
+
+bind -n S-Left resize-pane -L 2
+bind -n S-Right resize-pane -R 2
+bind -n S-Up resize-pane -U 1
+bind -n S-Down resize-pane -D 1
+
+bind -n C-Left resize-pane -L 10
+bind -n C-Right resize-pane -R 10
+bind -n C-Up resize-pane -U 5
+bind -n C-Down resize-pane -D 5
+
+bind-key b break-pane -d
+
+bind-key C-j choose-tree
+
+bind-key -t vi-copy v begin-selection
+bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy" 

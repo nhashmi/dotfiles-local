@@ -1,0 +1,25 @@
+# Sublime Text
+alias subl='open -a "Sublime Text"'
+
+# Git aliases
+alias gs='git status'
+alias go='git checkout'
+alias gl='git log --all --decorate --graph --pretty=format:"%C(yellow)%h%Creset %C(auto)%d%Creset %Cblue%ar%Creset %Cred%an%Creset %n%w(72,1,2)%s"'
+
+# Git aliases for Xfinity/welcome
+alias gp='git push origin HEAD:refs/for/development'
+
+# CLI aliases
+alias ls='ls -alG'
+alias r='ruby'
+
+# directories
+alias dev="cd ~/dev"
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# Scratchpads
+alias scratch="vim ~/dev/scratchpad.md"
+alias jsscratch="vim ~/dev/scratchpad.js"

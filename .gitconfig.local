@@ -1,0 +1,28 @@
+[user]
+  name = Nabil Hashmi
+  email = nabil2011@gmail.com 
+[core]
+  safecrlf = true
+  editor = /usr/bin/vim
+[alias]
+  hist = log --color --graph --pretty=format:'%Cred%h%Creset |%Cgreen(%cr)%Creset %s %C(yellow)%d%Creset %C(bold blue)[%an]%Creset' --abbrev-commit
+  type = cat-file -t
+  dump = cat-file -p
+  s = status -s
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+[push]
+  default = simple
+[pull]
+  rebase = true
+[rerere]
+  enabled = true
+[color]
+  ui = always
+[color "branch"]
+  current = green reverse
+  remote = yellow
+  local = green
+[color "status"]
+  added = green
+  changed = yellow
+  untracked = red
