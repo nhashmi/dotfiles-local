@@ -11,25 +11,28 @@ imap jk <esc>:w<cr>
 imap kj <esc>:w<cr>
 
 " bind \ (backward slash) to grep shortcut
- command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
- nnoremap \ :Ag<SPACE>
+command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+nnoremap \ :Ag<SPACE>
 
- " bind K to grep word under cursor
- nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+" bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
- " open scratchpads
- command Jsscratch vsplit ~/dev/scratchpad.js
- command Scratch vsplit ~/dev/scratchpad.md
+" open scratchpads
+command Jsscratch vsplit ~/dev/scratchpad.js
+command Scratch vsplit ~/dev/scratchpad.md
 
- " Pre-populate a split command with the current directory
- nmap <leader>v :vnew <C-r>=escape(expand("%:p:h"), ' ') . '/'<cr>
+" Pre-populate a split command with the current directory
+nmap <leader>v :vnew <C-r>=escape(expand("%:p:h"), ' ') . '/'<cr>
 
- " Move up and down by visible lines if current line is wrapped
- nmap j gj
- nmap k gk
+" Move up and down by visible lines if current line is wrapped
+nmap j gj
+nmap k gk
 
- " Command aliases for typoed commands (accidentally holding shift too long)
- command! Q q " Bind :Q to :q
- command! Qall qall
- command! QA qall
- command! E e
+" Command aliases for typoed commands (accidentally holding shift too long)
+command! Q q " Bind :Q to :q
+command! Qall qall
+command! QA qall
+command! E e
+
+" Paste and use current level of indentation (where cursor currently is)
+map <leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
