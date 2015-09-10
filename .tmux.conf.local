@@ -1,5 +1,6 @@
 set -g prefix C-s
 bind-key -r C-s send-prefix
+set -g default-shell /usr/local/bin/zsh
 
 bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
 
