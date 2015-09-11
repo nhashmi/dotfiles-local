@@ -36,3 +36,7 @@ command! E e
 
 " Paste and use current level of indentation (where cursor currently is)
 map <leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
+
+" Relative number with absolute line number on current line
+set number
+set relativenumber
