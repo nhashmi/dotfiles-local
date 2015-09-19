@@ -35,3 +35,6 @@ bind-key s split-window -h "vim ~/dev/scratchpad.md"
 
 # Easily swap panes by number 
 bind-key g display-panes\; command-prompt -p "pane #: "  "swap-pane -t '%%'"
+
+# Kill current session and start a new one
+bind-key K run-shell 'tmux switch-client -n \; kill-session -t "$(tmux display-message -p "#S")" || tmux kill-session'
