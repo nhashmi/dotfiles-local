@@ -29,3 +29,9 @@ bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
 
 # Use prefix C-L to clear the visible scrollback lines
 bind C-l send-keys 'C-l'
+
+# Quickly edit scratchpad
+bind-key s split-window -h "vim ~/dev/scratchpad.md"
+
+# Easily swap panes by number 
+bind-key g display-panes\; command-prompt -p "pane #: "  "swap-pane -t '%%'"
