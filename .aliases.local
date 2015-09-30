@@ -24,3 +24,6 @@ alias ....='cd ../../..'
 alias scratch="vim ~/dev/scratchpad.md"
 alias jsscratch="vim ~/dev/scratchpad.js"
 alias hscratch="vim ~/dev/htmlscratch.html"
+
+# Log pomodoros
+alias pom="vim ~/dev/pomodoros.md"

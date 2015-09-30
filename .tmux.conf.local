@@ -6,7 +6,8 @@ set -g default-shell /usr/local/bin/zsh
 bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
 
 set-option -g status-left-length 50
-set-option -g status-right " #(battery -t) #(date '+%a, %b %d - %I:%M') "
+set-option -g status-right "#(cat ~/.thyme-tmux) #(battery -t) #(date '+%a, %b %d - %I:%M') "
+set-option -g status-interval 1
 
 bind-key - split-window -v -c "#{pane_current_path}"
 bind-key / split-window -h -c "#{pane_current_path}"

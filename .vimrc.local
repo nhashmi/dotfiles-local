@@ -66,3 +66,9 @@ set hlsearch
 nmap <leader>h :nohlsearch<cr>
 " Overide ignorecase if pattern contains uppercase characters
 set smartcase
+
+" Highlight spelling mistakes in a more readable background color
+hi SpellBad ctermbg=1
+
+" Allows OS X to access clipboard
+set clipboard=unnamed
