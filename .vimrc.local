@@ -72,3 +72,8 @@ hi SpellBad ctermbg=1
 
 " Allows OS X to access clipboard
 set clipboard=unnamed
+
+" Settings for vim-textobj-rubyblock
+if has("autocmd")
+  filetype indent plugin on
+endif
