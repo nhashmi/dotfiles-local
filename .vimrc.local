@@ -77,3 +77,10 @@ set clipboard=unnamed
 if has("autocmd")
   filetype indent plugin on
 endif
+
+" Explore current file's directory
+nmap <leader>o :Explore<cr>
+" Open current file's directory in new split
+nmap <leader>os :Sexplore<cr>
+" Open current file's directory in new vertical split
+nmap <leader>ov :Vexplore<cr>
