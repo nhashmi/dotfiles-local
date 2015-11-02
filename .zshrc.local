@@ -11,6 +11,11 @@ zsh_stats () {
 zle -N zle-line-init
 zle -N zle-keymap-select
 
+# Fix for jRuby issue when downloading gems:
+# https://github.com/jruby/jruby/issues/1055
+
+export SSL_CERT_FILE="/usr/local/etc/openssl/cert.pem"
+
 # Ensure tmux is open
 _not_inside_tmux() { [[ -z "$TMUX" ]] }
 

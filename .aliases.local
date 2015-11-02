@@ -26,4 +26,5 @@ alias jsscratch="vim ~/dev/scratchpad.js"
 alias hscratch="vim ~/dev/htmlscratch.html"
 
 # Log pomodoros
-alias pom="vim ~/dev/pomodoros.md"
+alias pom="cd ~/dev/utils && ruby ~/dev/utils/pomodoro.rb && cd -"
+alias omnifocus="cd ~/dev/utils && ruby ~/dev/utils/omnifocus.rb && cd -"
