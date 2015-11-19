@@ -84,3 +84,6 @@ nmap <leader>o :Explore<cr>
 nmap <leader>os :Sexplore<cr>
 " Open current file's directory in new vertical split
 nmap <leader>ov :Vexplore<cr>
+
+" Change ColorColumn to dark gray
+hi ColorColumn ctermbg=8
