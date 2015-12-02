@@ -28,3 +28,7 @@ alias hscratch="vim ~/dev/htmlscratch.html"
 # Log pomodoros
 alias pom="cd ~/dev/utils && ruby ~/dev/utils/pomodoro.rb && cd -"
 alias omnifocus="cd ~/dev/utils && ruby ~/dev/utils/omnifocus.rb && cd -"
+
+# Create logbook
+alias logbook="cd ~/logbooks && ~/dev/utils/logbook.sh"
+
