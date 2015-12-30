@@ -26,3 +26,10 @@ ensure_tmux_is_running() {
 }
 
 ensure_tmux_is_running
+
+# Load pure prompt https://github.com/sindresorhus/pure#getting-started
+autoload -U promptinit && promptinit
+prompt pure
+
+# Enable zsh syntax highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
