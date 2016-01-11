@@ -87,3 +87,10 @@ nmap <leader>ov :Vexplore<cr>
 
 " Change ColorColumn to dark gray
 hi ColorColumn ctermbg=8
+
+" Pretty print JSON (requires 'elzr/vim-json' and 'jq')
+function! s:PrettyJSON()
+  %!jq .
+  set filetype=json
+endfunction
+command! PrettyJSON :call <sid>PrettyJSON()
