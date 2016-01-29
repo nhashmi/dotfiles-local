@@ -9,6 +9,7 @@ nmap <leader>so :source ~/.vimrc.local<cr>:source $MYVIMRC<cr>
 " Escape insert mode
 imap jk <esc>:w<cr>
 imap kj <esc>:w<cr>
+imap jj <esc><cr>
 
 " bind \ (backward slash) to grep shortcut
 command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
