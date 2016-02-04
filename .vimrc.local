@@ -95,3 +95,6 @@ function! s:PrettyJSON()
   set filetype=json
 endfunction
 command! PrettyJSON :call <sid>PrettyJSON()
+
+" Send RSpec specs to tmux panes
+let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
