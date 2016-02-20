@@ -13,6 +13,8 @@
   review = "!g() { [ -z \"$1\" ] && git push origin HEAD:refs/for/$(git rev-parse --abbrev-ref HEAD) || git push origin HEAD:refs/for/$1; }; g"
   unstage = reset
   uncommit = reset --soft HEAD^
+  dc = diff --word-diff --cached --color-words
+  df = diff --word-diff --color-words
 [push]
   default = simple
 [pull]
