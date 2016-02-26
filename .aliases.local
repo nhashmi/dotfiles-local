@@ -32,3 +32,5 @@ alias omnifocus="cd ~/dev/utils && ruby ~/dev/utils/omnifocus.rb && cd -"
 # Create logbook
 alias logbook="cd ~/logbooks && ~/dev/utils/logbook.sh"
 
+# Rails
+alias bers="bundle exec rails s"
