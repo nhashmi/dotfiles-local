@@ -34,3 +34,6 @@ alias logbook="cd ~/logbooks && ~/dev/utils/logbook.sh"
 
 # Rails
 alias bers="bundle exec rails s"
+
+# Create a new TIL post
+alias til="cd ~/dev/nabil.io && ruby til.rb"
