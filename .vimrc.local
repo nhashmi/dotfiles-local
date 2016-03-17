@@ -3,8 +3,8 @@ nmap 0 ^
 
 " Show vimrc and vimrc.local
 nmap <leader>vr :sp $MYVIMRC<cr>
-nmap <leader>lvr :sp ~/.vimrc.local<cr>
-nmap <leader>so :source ~/.vimrc.local<cr>:source $MYVIMRC<cr>
+nmap <leader>lvr :sp ~/dotfiles-local/.vimrc.local<cr>
+nmap <leader>so :source ~/dotfiles-local/.vimrc.local<cr>:source $MYVIMRC<cr>
 
 " Escape insert mode
 imap jk <esc>:w<cr>
