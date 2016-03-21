@@ -98,6 +98,3 @@ command! PrettyJSON :call <sid>PrettyJSON()
 
 " Send RSpec specs to tmux panes
 let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
-
-" Set default CtrlP mode to MRU
-let g:ctrlp_cmd = 'CtrlPMRU'
