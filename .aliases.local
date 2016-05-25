@@ -5,6 +5,8 @@ alias subl='open -a "Sublime Text"'
 alias gs='git status'
 alias go='git checkout'
 alias gl='git log --all --decorate --graph --pretty=format:"%C(yellow)%h%Creset %C(auto)%d%Creset %Cblue%ar%Creset %Cred%an%Creset %n%w(72,1,2)%s"'
+alias gad='git add .'
+alias gc='git commit'
 
 # Git aliases for Xfinity/welcome
 alias gp='git push origin HEAD:refs/for/development'
