@@ -13,6 +13,7 @@ alias gpom='git push origin master'
 alias get='git pull'
 alias gom='git pull origin master'
 alias ga='git add'
+alias gd='git diff'
 
 # CLI aliases
 alias ls='ls -alG'
