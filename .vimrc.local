@@ -100,3 +100,9 @@ command! PrettyJSON :call <sid>PrettyJSON()
 
 " Send RSpec specs to tmux panes
 let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+
+" Enter insert mode after adding newlines above and below
+nmap <leader>i o<cr><esc>kcc
+" Insert newline below/above without entering insert mode
+nmap <leader>j o<esc>
+nmap <leader>k o<esc>
