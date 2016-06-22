@@ -110,4 +110,4 @@ nmap <leader>j o<esc>
 nmap <leader>k o<esc>
 
 " console.log shortcut
-nmap <leader>cl oconsole.log()<esc>i
+nmap <leader>cl oconsole.log();<esc>hi
