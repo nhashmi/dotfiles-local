@@ -111,3 +111,9 @@ nmap <leader>k O<esc>
 
 " console.log shortcut
 nmap <leader>cl oconsole.log();<esc>hi
+
+" Attach to pane (Vim Tmux Runner)
+nmap <leader>x :VtrAttachToPane<cr>
+
+" Send gulp test:dev task to attached pane
+nmap <leader>g :VtrSendCommandToRunner gulp test:dev<cr>
