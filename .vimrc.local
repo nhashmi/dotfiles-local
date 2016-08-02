@@ -107,7 +107,7 @@ let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
 nmap <leader>i o<cr><esc>kcc
 " Insert newline below/above without entering insert mode
 nmap <leader>j o<esc>
-nmap <leader>k o<esc>
+nmap <leader>k O<esc>
 
 " console.log shortcut
 nmap <leader>cl oconsole.log();<esc>hi
