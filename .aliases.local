@@ -15,6 +15,7 @@ alias gom='git pull origin master'
 alias ga='git add'
 alias gd='git diff'
 alias gdc='git diff --cached'
+alias gli='git log -i -E --grep'
 
 # CLI aliases
 alias ls='ls -alG'
