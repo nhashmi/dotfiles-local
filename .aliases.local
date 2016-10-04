@@ -45,3 +45,6 @@ alias bers="bundle exec rails s"
 
 # Create a new TIL post
 alias til="cd ~/dev/nabil.io && ruby til.rb"
+
+# Run servers for MAW project
+alias mserve="~/dev/start-maw.sh"
