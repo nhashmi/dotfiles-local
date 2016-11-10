@@ -109,8 +109,9 @@ nmap <leader>i o<cr><esc>kcc
 nmap <leader>j o<esc>
 nmap <leader>k O<esc>
 
-" console.log shortcut
+" JS debugging shortcuts
 nmap <leader>cl oconsole.log();<esc>hi
+nmap <leader>b odebugger;<esc>:w<cr>
 
 " Attach to pane (Vim Tmux Runner)
 nmap <leader>x :VtrAttachToPane<cr>
