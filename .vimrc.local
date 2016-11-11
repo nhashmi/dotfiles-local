@@ -121,6 +121,3 @@ nmap <leader>g :VtrSendCommandToRunner gulp test:dev<cr>
 
 " Configure EditorConfig to work with fugitive
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
-
-" Switch quickly between files
-nmap <leader><leader> <C-^>
