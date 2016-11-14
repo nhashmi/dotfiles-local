@@ -65,6 +65,8 @@ nnoremap <leader>a $a
 
 " Highlight search results
 set hlsearch
+hi Search cterm=underline,reverse ctermfg=0 ctermbg=11
+
 " Clear highlighted search results
 nmap <leader>h :nohlsearch<cr>
 " Overide ignorecase if pattern contains uppercase characters
