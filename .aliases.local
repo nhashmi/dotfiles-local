@@ -46,5 +46,8 @@ alias bers="bundle exec rails s"
 # Create a new TIL post
 alias til="cd ~/dev/nabil.io && ruby til.rb"
 
+# Create a new reading journal entry
+alias reading="cd ~/dev/nabil.io && ruby read.rb"
+
 # Run servers for MAW project
 alias mserve="~/dev/start-maw.sh"
