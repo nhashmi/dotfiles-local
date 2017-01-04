@@ -140,3 +140,6 @@ function! RenameFile()
   endif
 endfunction
 map <leader>n :call RenameFile()<cr>
+
+" Change vim-snipmate trigger to <C-j> since <Tab> is taken
+imap <C-j> <Plug>snipMateNextOrTrigger
