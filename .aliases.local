@@ -33,10 +33,6 @@ alias scratch="vim ~/dev/scratchpad.md"
 alias jsscratch="vim ~/dev/scratchpad.js"
 alias hscratch="vim ~/dev/htmlscratch.html"
 
-# Log pomodoros
-alias pom="cd ~/dev/utils && ruby ~/dev/utils/pomodoro.rb && cd -"
-alias omnifocus="cd ~/dev/utils && ruby ~/dev/utils/omnifocus.rb && cd -"
-
 # Create logbook
 alias logbook="cd ~/logbooks && ~/dev/utils/logbook.sh"
 
@@ -48,6 +44,3 @@ alias til="cd ~/dev/nabil.io && ruby til.rb"
 
 # Create a new reading journal entry
 alias reading="cd ~/dev/nabil.io && ruby read.rb"
-
-# Run servers for MAW project
-alias mserve="~/dev/start-maw.sh"
