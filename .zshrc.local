@@ -38,3 +38,6 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # https://robots.thoughtbot.com/cding-to-frequently-used-directories-in-zsh
 setopt auto_cd
 cdpath=($HOME/dev $HOME/learning)
+
+# Add Anaconda to path
+export PATH="/anaconda3/bin:$PATH"
