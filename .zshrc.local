@@ -40,4 +40,6 @@ setopt auto_cd
 cdpath=($HOME/dev $HOME/learning)
 
 # Add Anaconda to path
-export PATH="/anaconda3/bin:$PATH"
+if [ -d "$HOME/anaconda3/bin" ] ; then
+    export PATH="$HOME/anaconda3/bin:$PATH"
+fi
