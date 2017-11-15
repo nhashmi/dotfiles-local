@@ -40,7 +40,7 @@ alias logbook="cd ~/logbooks && ~/dev/utils/logbook.sh"
 alias bers="bundle exec rails s"
 
 # Create a new TIL post
-alias til="cd ~/dev/nabil.io && ruby til.rb"
+alias til="cd ~/projects/nabil.io && ruby til.rb"
 
 # Create a new reading journal entry
-alias reading="cd ~/dev/nabil.io && ruby read.rb"
+alias reading="cd ~/projects/nabil.io && ruby read.rb"
