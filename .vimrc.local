@@ -146,3 +146,18 @@ map <leader>n :call RenameFile()<cr>
 
 " Change vim-snipmate trigger to <C-j> since <Tab> is taken
 imap <C-j> <Plug>snipMateNextOrTrigger
+
+" ProseMode courtesy https://statico.github.io/vim3.html#writing-prose-in-vim
+function! ProseMode()
+  call goyo#execute(0, [])
+  set spell noci nosi noai nolist noshowmode noshowcmd
+  set complete+=s
+  set bg=light
+  if !has('gui_running')
+    let g:solarized_termcolors=256
+  endif
+  colorscheme solarized
+endfunction
+
+command! ProseMode call ProseMode()
+nmap \p :ProseMode<CR>
