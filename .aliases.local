@@ -20,6 +20,7 @@ alias gli='git log -i -E --grep'
 # CLI aliases
 alias ls='ls -alG'
 alias r='ruby'
+alias py='python3.6'
 
 # directories
 alias dev="cd ~/dev"
