@@ -144,9 +144,6 @@ function! RenameFile()
 endfunction
 map <leader>n :call RenameFile()<cr>
 
-" Change vim-snipmate trigger to <C-j> since <Tab> is taken
-imap <C-j> <Plug>snipMateNextOrTrigger
-
 " ProseMode courtesy https://statico.github.io/vim3.html#writing-prose-in-vim
 function! ProseMode()
   call goyo#execute(0, [])
@@ -161,3 +158,7 @@ endfunction
 
 command! ProseMode call ProseMode()
 nmap \p :ProseMode<CR>
+
+" ale config
+let g:ale_sign_error = '●'
+let g:ale_sign_warning = '.'
