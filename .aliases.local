@@ -45,3 +45,6 @@ alias til="cd ~/projects/nabil.io && ruby til.rb"
 
 # Create a new reading journal entry
 alias reading="cd ~/projects/nabil.io && ruby read.rb"
+
+# Start projects
+alias mserve="~/dev/start-maw.sh"
